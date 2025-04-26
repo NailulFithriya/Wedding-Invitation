@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Wedding Ema ❤️ Ikhsan</title>
+
+    <!-- favicon -->
+    <link rel="icon" href="assets/img/favicon.png" />
+
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans&family=Tangerine&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- music -->
+    <audio
+      src="assets/audio/the-way-you-look-at-me.mp3"
+      loop
+      class="music"
+    ></audio>
+    <!-- sfx door -->
+    <audio src="assets/audio/door.mp3" class="sound-door"></audio>
+
+    <!-- door section -->
+    <div id="door-section" class="open" onclick="mulai()">
+      <div class="doors">
+        <div class="door left">
+          <img src="assets/img/left_door.png" alt="Pintu Kiri" />
+        </div>
+        <div class="door right">
+          <img src="assets/img/right_door.png" alt="Pintu Kanan" />
+        </div>
+      </div>
+    </div>
+    <!-- end door section -->
+
+    <!-- content section -->
+    <div id="content-section">
+      <!-- navbar -->
+      <ul id="nav" class="nav">
+        <span class="nav-music"></span>
+        <li>
+          <a href="#info">
+            <i class="fas fa-fw fa-calendar-day"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#gallery-section">
+            <i class="fas fa-fw fa-image"></i>
+          </a>
+        </li>
+        <li>
+          <a
+            href="#"
+            class="nav-item-music rotate"
+            id="music-button"
+            onclick="toggleMusic(event)"
+          >
+            <i class="fas fa-fw fa-compact-disc"></i>
+          </a>
+        </li>
+
+        <li>
+          <a href="#gift-section">
+            <i class="fas fa-fw fa-gift"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#section-rsvp">
+            <i class="fas fa-fw fa-check-to-slot"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- end navbar -->
+
+    <!-- hero section -->
+    <section
+      id="hero"
+      class="hero w-100 h-100 py-5 mx-auto text-center d-flex flex-column justify-content-between align-items-center"
+    >
+      <div class="hero-top mt-5">
+        <h4>The Wedding Of</h4>
+        <h1>Ema & Ikhsan</h1>
+        <div
+          class="countdown my-3 d-flex justify-content-center"
+          id="countdown-wedding"
+        >
+          <div class="col-lg-1 col-3">
+            <div class="text-center p-2 rounded text-light">
+              <h5>0</h5>
+              Hari
+            </div>
+          </div>
+          <div class="col-lg-1 col-3">
+            <div class="text-center p-2 rounded text-light">
+              <h5>0</h5>
+              Jam
+            </div>
+          </div>
+          <div class="col-lg-1 col-3">
+            <div class="text-center p-2 rounded text-light">
+              <h5>0</h5>
+              Menit
+            </div>
+          </div>
+          <div class="col-lg-1 col-3">
+            <div class="text-center p-2 rounded text-light">
+              <h5>0</h5>
+              Detik
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-bottom">
+        <h4 class="my-2 text-white">Dear <span id="nama-sambutan"> </span></h4>
+        <a
+          href="#pembuka-section"
+          class="rounded-pill text-decoration-none btn btn-lg py-3"
+          onclick="handleOpenInvitation()"
+        >
+          <i class="fas fa-envelope-open-text"></i>
+          Open Invitation
+        </a>
+      </div>
+    </section>
+    <!-- end section hero -->
+
+    <!-- section pembuka -->
+    <section id="pembuka-section" class="pembuka-section section-bg">
+      <div
+        class="container d-flex justify-content-center align-items-center h-100"
+        data-aos="fade-up"
+        data-aos-easing="linear"
+        data-aos-duration="1500"
+      >
+        <div class="text-center">
+          <h1 class="text-dark huruf-sambung fw-bold">Assalamu'alaikum</h1>
+          <h3 class="pt-2 mb-5">
+            وَمِنْ اٰيٰتِهٖٓ اَنْ خَلَقَ لَكُمْ مِّنْ اَنْفُسِكُمْ اَزْوَاجًا
+            لِّتَسْكُنُوْٓا اِلَيْهَا وَجَعَلَ بَيْنَكُمْ مَّوَدَّةً
+            وَّرَحْمَةًۗ اِنَّ فِيْ ذٰلِكَ لَاٰيٰتٍ لِّقَوْمٍ يَّتَفَكَّرُوْنَ
+          </h3>
+          <p>
+            Di antara tanda-tanda (kebesaran)-Nya ialah bahwa Dia menciptakan
+            pasangan-pasangan untukmu dari (jenis) dirimu sendiri agar kamu
+            merasa tenteram kepadanya. Dia menjadikan di antaramu rasa cinta dan
+            kasih sayang. Sesungguhnya pada yang demikian itu benar-benar
+            terdapat tanda-tanda (kebesaran Allah) bagi kaum yang berpikir.
+          </p>
+          <p>(Q.S Ar Rum : 211)</p>
+        </div>
+      </div>
+    </section>
+    <!-- end pembuka-section -->
+
+    <!-- section Pengantin -->
+    <section
+      id="pengantin-section"
+      class="pengantin w-100 h-100 p-3 mx-auto text-center d-flex flex-column justify-content-between align-items-center"
+    >
+      <div
+        class="p-3 row justify-content-center align-items-center text-center g-4"
+      >
+        <div
+          data-aos="fade-up"
+          data-aos-easing="linear"
+          data-aos-duration="1000"
+        >
+          <p class="p-5">
+            Maha suci Allah yang telah menciptakan mahluk-Nya
+            berpasang-pasangan. Ya Allah rahmatilah pernikahan kami :
+          </p>
+        </div>
+
+        <div class="row justify-content-center align-items-center pengantin-card gx-4 gy-4">
+          <div class="col-12 col-md-4 text-center pengantin-wanita" data-aos="zoom-in"
+          data-aos-duration="1500"
+          data-aos-easing="linear">
+            <img
+              src="assets/img/foto-pengantin/ema.jpg"
+              alt="Pengantin Wanita"
+              class="foto-pengantin"
+            />
+            <h2 class="nama huruf-sambung">Ns. Ema Putri, S.Kep</h2>
+            <p class="orangtua">
+              Putri terakhir dari Bapak Anwar Ismail<br />dan Ibu Darmiati
+            </p>
+          </div>
+          
+          <div class="col-12 col-md-2 text-center dan" data-aos="zoom-in-up">
+            <h2>&</h2>
+          </div>
+          
+          <div class="col-12 col-md-4 text-center pengantin-pria"             data-aos="zoom-in"
+          data-aos-duration="1500"
+          data-aos-easing="linear">
+            <img
+            src="assets/img/foto-pengantin/ikhsan.jpg"
+            alt="Pengantin Pria"
+            class="foto-pengantin"
+            />
+            <h2 class="nama huruf-sambung">Ikhsan Maulana, SE</h2>
+            <p class="orangtua">
+              Putra pertama dari Bapak Drs. Jafar, M.Pd<br /> dan Ibu Yusna, S.Pd
+            </p>
+          </div>
+        </div>
+  
+        </div>
+      </div>
+    </section>
+
+    <!-- acara section -->
+    <section id="info" class="info">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <h2>Informasi Acara</h2>
+            <p class="alamat">
+              Bertempat di Kediaman Mempelai Wanita :<br />
+              Jl. Laksamana Malahayati, Dusun Malahayati, Desa Lamreh, <br/> 
+              Kec. Masjid Raya, Kab. Aceh Besar 
+            </p>
+
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3970.8162929914033!2d95.52639527498545!3d5.594142894386638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNcKwMzUnMzguOSJOIDk1wrAzMSc0NC4zIkU!5e0!3m2!1sid!2sid!4v1745407858715!5m2!1sid!2sid"
+              width="100%"
+              height="250"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-easing="linear"
+            ></iframe>
+
+            <a
+              href="https://www.google.com/maps?q=5.5941429,95.5289702"
+              target="_blank"
+              class="btn btn-light btn-sm my-3"
+              >Klik untuk membuka peta</a
+            >
+            <p class="description" data-aos="flip-left" >
+              Diharapkan untuk tidak salah alamat dan tanggal. Manakala tiba di
+              tujuan namun tidak ada tanda-tanda sedang dilangsungkan
+              pernikahan, boleh jadi Anda salah jadwal, atau salah tempat.
+            </p>
+          </div>
+        </div>
+
+        <div class="info-card-container">
+          <div class="info-card text-center justify-content-center">
+
+            <h2>Save The Date</h2>
+            <img src="assets/img/date.png" alt="tanggal" data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000">
+            <div class="row justify-content-center mt-4">
+              <div
+                class="akad-resepsi col-md-5 col-10"
+              >
+                <div class="text-center mb-5" data-aos="zoom-in-up" data-aos-easing="linear"
+                data-aos-duration="1500" >
+                  <div class="huruf-sambung card-header">Akad Nikah</div>
+                    <div class="row justify-content-center">
+                      <div class="col-md-6">
+                        <i class="bi bi-clock d-block"></i>
+                        <span>Pukul 08.00 WIB</span>
+                      </div>
+                  </div>
+                </div>
+                <div class="text-center" data-aos="zoom-in-up" data-aos-easing="linear"
+                data-aos-duration="1500">
+                  <div class="huruf-sambung card-header">Resepsi</div>
+                    <div class="row justify-content-center">
+                      <div class="col-md-6">
+                        <i class="bi bi-clock d-block"></i>
+                        <span>Pukul 11.30 - selesai</span>
+                      </div>
+                  </div>
+                  <div class="pt-5">
+                    <p>Saat acara akad dan resepsi, diharapkan untuk kondusif menjaga kekhidmatan
+                      dan kekhusyuan seluruh prosesi.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery-section" class="gallery">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="fw-bold mb-5">Galeri Foto</h2>
+        </div>
+
+        <div class="row row-cols-lg-4 row-cols-md-3 row-cols-sm-2 row-cols-1 g-3 justify-content-center">
+          <div class="col">
+            <a href="assets/img/gallery/1.jpg" data-toggle="lightbox" data-caption="Photo 1" data-gallery="mygallery">
+              <img src="assets/img/gallery/1.jpg" alt="Photo 1" class="img-fluid w-100 rounded" />
+            </a>
+          </div>
+          <div class="col">
+            <a href="assets/img/gallery/2.jpg" data-toggle="lightbox" data-caption="Photo 2" data-gallery="mygallery">
+              <img src="assets/img/gallery/2.jpg" alt="Photo 2" class="img-fluid w-100 rounded" />
+            </a>
+          </div>
+          <div class="col">
+            <a href="assets/img/gallery/3.jpg" data-toggle="lightbox" data-caption="Photo 3" data-gallery="mygallery">
+              <img src="assets/img/gallery/3.jpg" alt="Photo 3" class="img-fluid w-100 rounded" />
+            </a>
+          </div>
+          <div class="col">
+            <a href="assets/img/gallery/4.jpg" data-toggle="lightbox" data-caption="Photo 4" data-gallery="mygallery">
+              <img src="assets/img/gallery/4.jpg" alt="Photo 4" class="img-fluid w-100 rounded" />
+            </a>
+          </div>
+          <div class="col">
+            <a href="assets/img/gallery/5.jpg" data-toggle="lightbox" data-caption="Photo 5" data-gallery="mygallery">
+              <img src="assets/img/gallery/5.jpg" alt="Photo 5" class="img-fluid w-100 rounded" />
+            </a>
+          </div>
+          <div class="col">
+            <a href="assets/img/gallery/6.jpg" data-toggle="lightbox" data-caption="Photo 6" data-gallery="mygallery">
+              <img src="assets/img/gallery/6.jpg" alt="Photo 6" class="img-fluid w-100 rounded" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gift Section -->
+    <section id="gift-section" class="gift-section py-5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="section-title">
+              <h2 class="huruf-sambung fw-bold">Wedding Gift</h2>
+              <p>
+                Bagi Bapak/Ibu/Saudara/i yang ingin mengirimkan hadiah
+                pernikahan, dapat melalui virtual account atau e-wallet di bank
+                ini.
+              </p>
+            </div>
+            <div class="row justify-content-center">
+              <div class="col-lg-6 text-center">
+                <button
+                  type="button"
+                  class="text-center btn btn-lg mb-4 rounded-pill"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseHadiah"
+                >
+                  <i class="fas fa-fw fa-gift"></i> Kirim hadiah
+                </button>
+                <!-- BSI -->
+                <div class="collapse" id="collapseHadiah">
+                  <div class="my-4 mx-auto position-relative credit-card">
+                    <!-- Tombol Copy Kiri Atas -->
+                    <a
+                      style="cursor: pointer"
+                      onclick="copyText(this)"
+                      class="copy-button btn btn-light mt-3"
+                    >
+                      <i class="fas fa-fw fa-copy"></i> Copy
+                    </a>
+
+                    <!-- Logo BSI Kanan Atas -->
+                    <img
+                      src="assets/img/logo-bsi.png"
+                      alt="Logo BSI"
+                      class="card-logo"
+                    />
+
+                    <!-- Nomor Rekening -->
+                    <div class="card-container">
+                      <img
+                        src="assets/img/chip.png"
+                        alt="Chip"
+                        class="card-sim"
+                      />
+                      <div class="card-number">7143465602</div>
+                    </div>
+
+                    <!-- Nama Pemilik -->
+                    <div class="card-name mt-2">Ema Putri</div>
+                  </div>
+                </div>
+
+                <!-- Bank Aceh -->
+                <div class="collapse" id="collapseHadiah">
+                  <div class="my-4 mx-auto position-relative credit-card">
+                    <!-- Tombol Copy Kiri Atas -->
+                    <a
+                      style="cursor: pointer"
+                      onclick="copyText(this)"
+                      class="copy-button btn btn-light mt-3"
+                    >
+                      <i class="fas fa-fw fa-copy"></i> Copy
+                    </a>
+
+                    <!-- Logo Bank Aceh Kanan Atas -->
+                    <img
+                      src="assets/img/logo-bank-aceh.png"
+                      alt="Logo Bank Aceh"
+                      class="card-logo"
+                    />
+
+                    <!-- Nomor Rekening -->
+                    <div class="card-container">
+                      <img
+                        src="assets/img/chip.png"
+                        alt="Chip"
+                        class="card-sim"
+                      />
+                      <div class="card-number">61202200416280</div>
+                    </div>
+
+                    <!-- Nama Pemilik -->
+                    <div class="card-name mt-2">Ema Putri</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section RSVP -->
+    <section id="section-rsvp" class="section-rsvp">
+      <div class="container">
+        <h2 class="huruf-sambung">Konfirmasi Kehadiran</h2>
+        <p>
+          Merupakan kehormatan dan kebahagiaan bagi kami apabila
+          Bapak/Ibu/Saudara/i berkenan hadir dan memberikan doa restu.
+        </p>
+
+        <form class="form-rsvp" action="https://script.google.com/macros/s/AKfycbyaYQgKe-Hwf2iAIlZOCwofLobyD0-7ZOJMwgtTqoYgvFbpCwDa1n1z3w3ebkbiNWoH/exec" method="POST" id="rsvp-form">
+          <input type="text" name="nama" id="nama" placeholder="Nama Anda" required />
+
+          <input
+            type="number"
+            name="jumlah"
+            placeholder="Jumlah Tamu"
+            min="1"
+            required
+            id="jumlah"
+          />
+
+          <select name="status" id="status" required>
+            <option value="" disabled selected>Konfirmasi Kehadiran</option>
+            <option value="Hadir">Hadir</option>
+            <option value="Tidak Hadir">Tidak Hadir</option>
+          </select>
+
+          <textarea
+            name="ucapan"
+            rows="3"
+            placeholder="Ucapan untuk pengantin (opsional)"
+            id="ucapan"
+          ></textarea>
+
+          <button type="submit"> <i class="fas fa-fw fa-paper-plane"></i> Kirim</button>
+        </form>
+
+        <div class="row mt-5">
+          <div class="col-lg-12">
+            <div id="disqus-thread"></div>
+            <div id="disqus_thread"></div>
+            <script>
+                /**
+                *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+                /*
+                var disqus_config = function () {
+                this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+                this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                };
+                */
+                (function() { // DON'T EDIT BELOW THIS LINE
+                var d = document, s = d.createElement('script');
+                s.src = 'https://ema-dan-ikhsan.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+                })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+          </div>
+
+        </div>
+      </div>
+      <!-- section ucapan -->
+      <!-- <div id="ucapan-container" class="ucapan-wrapper">
+        <h3 class="text-golden" style="margin-bottom: 30px;">Ucapan & Doa</h3>
+        <?php
+        // index.php
+        include('src/rsvp/tampil_ucapan.php');
+        ?>
+      </div> -->
+    </section>
+
+    <!-- last section -->
+    <section id="penutup-section" class="penutup py-5" style="height: 100vh;" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
+      <div class="container d-flex justify-content-center align-items-center h-100">
+        <div class="row justify-content-center text-center">
+          <div class="col-lg-8">
+            <div class="section-title text-center">
+              <p>Merupakan suatu kebahagiaan bagi kami,<br/> apabila Bapak/Ibu/Saudara/i,<br/> berkenan hadir dan memberikan do'a restu kepada kami</p>
+              <h5 class="my-3 pt-5">KAMI YANG BERBAHAGIA</h5>
+              <h2 class="huruf-sambung">Ema dan Ikhsan</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+     <!-- footer -->
+      <footer id="footer" class="footer mb-5 pb-5">
+        <div class="container py-5 text-center position-relative">
+          <div class="row">
+            <div class="col-12 my-3">
+              <a href="https://www.instagram.com/nailulfthry?igsh=OWc0MjI3ZHZuaGhm" target="_blank" class="text-decoration-none fw-bold">&copy;2025. Made with ❤️ by Nailul Fithriya</i></a>
+            </div>
+            <div class="col-12 my-3">
+              <a href="#" class=""><i class="fas fa-fw fa-arrow-up">Back to top</i></a>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+
+    <!-- --------------------------------------------------- -->
+    <!-- javascript -->
+    <!-- -------------------------------------------------- -->
+    <!-- jquery -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- bootstrap 5 -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- lightbox2 -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.5/js/lightbox.min.js"
+      integrity="sha512-KbRFbjA5bwNan6DvPl1ODUolvTTZ/vckssnFhka5cG80JVa5zSlRPCr055xSgU/q6oMIGhZWLhcbgIC0fyw3RQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- sweetalert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.19.1/dist/sweetalert2.all.min.js"></script>
+
+
+    <!-- masonry -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
+      integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D"
+      crossorigin="anonymous"
+      async
+    ></script>
+
+    <!-- script.js -->
+    <script src="assets/js/script.js"></script>
+
+    <!-- disqus -->
+    <script id="dsq-count-scr" src="//ema-dan-ikhsan.disqus.com/count.js" async></script>
+  </body>
+</html>
