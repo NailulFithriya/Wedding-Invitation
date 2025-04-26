@@ -218,23 +218,15 @@ document.addEventListener("DOMContentLoaded", function () {
         if (!response.ok) {
           throw new Error("Network response was not ok");
         }
-        // return response.json(); // Mengonversi respons menjadi JSON
+        return response.json(); // Mengonversi respons menjadi JSON
       })
       .then((data) => {
         // Memeriksa hasil dari respons JSON
-        if (data.result === "success") {
-          Swal.fire({
-            icon: "success",
-            title: "Success",
-            text: "Konfirmasi kehadiran berhasil terkirim!",
-          });
-        } else {
-          Swal.fire({
-            icon: "error",
-            title: "Error",
-            text: "Terjadi kesalahan saat mengirim konfirmasi kehadiran.",
-          });
-        }
+        Swal.fire({
+          icon: "success",
+          title: "Success",
+          text: "Konfirmasi kehadiran berhasil terkirim!",
+        });
       })
       .catch((error) => {
         Swal.fire({
