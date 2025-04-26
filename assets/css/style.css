@@ -297,8 +297,8 @@ body.transition {
 /* pembuka section */
 .pembuka-section {
   height: 100vh;
-  padding: 40px;
-  font-size: 1.5rem;
+  padding: 20px;
+  font-size: 1.4rem;
 }
 
 .section-title {
@@ -741,7 +741,7 @@ body.transition {
     font-size: 60%;
   }
   .credit-card {
-    width: 60%;
+    width: 75%;
     height: auto;
   }
 
