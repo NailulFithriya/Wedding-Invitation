@@ -766,4 +766,8 @@ body.transition {
     height: 60px;
     top: -20px;
   }
+
+  .container-pembuka {
+    padding-top: 80px;
+  }
 }
