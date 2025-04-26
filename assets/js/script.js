@@ -14,6 +14,10 @@ function mulai() {
   const doorSection = document.querySelector("#door-section");
   const leftDoor = document.querySelector(".door.left");
   const rightDoor = document.querySelector(".door.right");
+  const instruction = document.querySelector(".door-instruction");
+
+  // hilangkan instruksi saat klik
+  if (instruction) instruction.style.display = "none";
 
   // buka pintu
   leftDoor.style.transform = "rotateY(-100deg)";
@@ -141,12 +145,12 @@ var x = setInterval(function () {
 
 // nama sambutan
 const urlParams = new URLSearchParams(window.location.search);
-const panggilan = urlParams.get("p");
-const nama = urlParams.get("n");
+// const panggilan = urlParams.get("to");
+const nama = urlParams.get("to");
 const namaSambutan = document.querySelector("#nama-sambutan");
 
-if (panggilan && nama && namaSambutan) {
-  namaSambutan.innerText = `${panggilan} ${nama},`;
+if (nama && namaSambutan) {
+  namaSambutan.innerText = `${nama}`;
 }
 
 // Fungsi untuk menyalin teks dari elemen .card-number
