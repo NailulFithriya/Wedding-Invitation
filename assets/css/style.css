@@ -270,7 +270,7 @@ body.transition {
   position: relative; /* buat konteks stacking */
   z-index: 1;
   font-size: 1.7rem;
-  padding-bottom: 50px;
+  padding-bottom: 90px;
 }
 
 .hero-bottom a,
