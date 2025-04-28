@@ -496,25 +496,29 @@
 
         <div class="row mt-5">
           <div class="col-lg-12">
-            <h3 class="text-center mb-4">Berikan Ucapan Selamat!</h3>
-            <p class="lead text-center mb-4">
+            <h2 class="text-center mb-4" style="font-family: 'Great Vibes', cursive; color: goldenrod;">Berikan Ucapan Selamat!</h2>
+            <p class="lead text-center mb-4" style="color: #5D5D5D;">
               Silakan tinggalkan komentar Anda dengan 2 pilihan berikut:
             </p>
-            <ul class="list-group mb-4">
-              <li class="list-group-item d-flex justify-content-between align-items-center">
-                <strong>Tanpa login</strong> (anonym): langsung isi ucapan Anda. Anda dapat menyertakan nama di dalam pesan ucapan.
-                <span class="badge bg-primary rounded-pill">Pilihan 1</span>
-              </li>
-              <li class="list-group-item d-flex justify-content-between align-items-center">
-                <strong>Dengan login Google/email</strong>: komentar Anda akan terhubung dengan akun Anda.
-                <span class="badge bg-secondary rounded-pill">Pilihan 2</span>
-              </li>
-            </ul>
-            <p class="text-center">
-              Tidak wajib login jika hanya ingin memberikan ucapan singkat.
-            </p>
-        
-            <div id="commento"></div>
+            <table class="table">
+              <tbody>
+                <tr>
+                  <td><strong>Tanpa login (anonym)</strong> </td>
+                  <td class="text-start">: langsung isi ucapan Anda. Anda dapat menyertakan nama di dalam pesan ucapan.</td>
+                  <td><span class="badge bg-primary rounded-pill">Pilihan 1</span></td>
+                </tr>
+                <tr>
+                  <td><strong>Dengan login Google/email</strong></td>
+                  <td class="text-start" >: komentar Anda akan terhubung dengan akun Anda.</td>
+                  <td><span class="badge bg-secondary rounded-pill">Pilihan 2</span></td>
+                </tr>
+              </tbody>
+            </table>
+            <div id="commento" class="text-center mb-4" style="background: #fff; border: 1px solid #e7e7e7; padding: 20px; border-radius: 5px;">
+              <textarea rows="4" placeholder="Tinggalkan ucapan Anda di sini..." style="width: 100%; border: 1px solid #ccc; border-radius: 5px; padding: 10px;"></textarea>
+              <button style="background: goldenrod; color: white; border: none; border-radius: 5px; padding: 10px 20px; cursor: pointer;">Kirim</button>
+            </div>
+            
             <script defer src="https://cdn.commento.io/js/commento.js"></script>
           </div>
         </div>
